@@ -141,9 +141,9 @@ var pofo_hyp_des_en = "<p>Software Developer / Embedded System Laboratory at Koo
                      <h4> Demo video </h4>\
                      <p>\
                      <div class=\"video-container\">\
-                     <iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/-BV1iic_VuQ\" frameborder=\"0\" allowfullscreen></iframe></div>\
-				     <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/SPeo7MzZLUY\" frameborder=\"0\" allowfullscreen></iframe></div>\
-                     <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/Cv7NU0LpzNo\" frameborder=\"0\" allowfullscreen></iframe></div>\
+                     <iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/-BV1iic_VuQ\" frameborder=\"0\" allowfullscreen></iframe></div>\
+				     <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/SPeo7MzZLUY\" frameborder=\"0\" allowfullscreen></iframe></div>\
+                     <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/Cv7NU0LpzNo\" frameborder=\"0\" allowfullscreen></iframe></div>\
                      </p>";
 
  
@@ -160,9 +160,9 @@ var pofo_hyp_des_ko = "<p>Software Developer / 임베디드 시스템 연구실 
                       <h4> 데모 비디오 </h4>\
                       <p>\
                       <div class=\"video-container\">\
-                      <iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/-BV1iic_VuQ\" frameborder=\"0\" allowfullscreen></iframe></div>\
-				      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/SPeo7MzZLUY\" frameborder=\"0\" allowfullscreen></iframe></div>\
-                      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/embed/Cv7NU0LpzNo\" frameborder=\"0\" allowfullscreen></iframe></div>\
+                      <iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/-BV1iic_VuQ\" frameborder=\"0\" allowfullscreen></iframe></div>\
+				      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/SPeo7MzZLUY\" frameborder=\"0\" allowfullscreen></iframe></div>\
+                      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/Cv7NU0LpzNo\" frameborder=\"0\" allowfullscreen></iframe></div>\
                       </p>";
 
 var pofo_chart_title_en = "<h2>Developed ChartCloud, the SNS Android App</h2>";
@@ -173,9 +173,9 @@ var pofo_chart_des_en = "<p>Software Developer / Cloud&Grid Laboratory at Kookmi
                       Tools : GAE, GWT, Trac, Jenkins<br>\
                       <p>Web version about this project: <a href=\"http://chartcloud.cs.kookmin.ac.kr\">http://chartcloud.cs.kookmin.ac.kr</a><br>\
                       About this project.<br>\
-				      <div class=\"video-container\"><iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/-Xfu-hZPhKg\" frameborder=\"0\" allowfullscreen></iframe></div>\
+				      <div class=\"video-container\"><iframe width=\"420\" height=\"315\" src=\"http://www.youtube.com/v/-Xfu-hZPhKg\" frameborder=\"0\" allowfullscreen></iframe></div>\
                       Url about demo.<br>\
-				      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/LKG2lYMjQKE\" frameborder=\"0\" allowfullscreen></iframe></div>\
+				      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/LKG2lYMjQKE\" frameborder=\"0\" allowfullscreen></iframe></div>\
                       Market : \
                       <a href=\"https://play.google.com/store/apps/details?id=kr.ac.kookmin.cs.chartcloud.android&hl=ko\">https://play.google.com/store/apps/details?id=kr.ac.kookmin.cs.chartcloud.android&hl=ko</a></p>";
 
@@ -188,9 +188,9 @@ var pofo_chart_des_ko = "<p>Software Developer / 클라우드 시스템 연구�
                       Tools : GAE, GWT, Trac, Jenkins<br>\
                       <p>Web version about this project: <a href=\"http://chartcloud.cs.kookmin.ac.kr\">http://chartcloud.cs.kookmin.ac.kr</a><br>\
                       About this project.<br>\
-				      <div class=\"video-container\"><iframe width=\"420\" height=\"315\" src=\"//www.youtube.com/embed/-Xfu-hZPhKg\" frameborder=\"0\" allowfullscreen></iframe></div>\
+				      <div class=\"video-container\"><iframe width=\"420\" height=\"315\" src=\"http://www.youtube.com/v/-Xfu-hZPhKg\" frameborder=\"0\" allowfullscreen></iframe></div>\
                       Url about demo.<br>\
-				      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"//www.youtube.com/embed/LKG2lYMjQKE\" frameborder=\"0\" allowfullscreen></iframe></div>\
+				      <div class=\"video-container\"><iframe width=\"560\" height=\"315\" src=\"http://www.youtube.com/v/LKG2lYMjQKE\" frameborder=\"0\" allowfullscreen></iframe></div>\
                       Market : \
                       <a href=\"https://play.google.com/store/apps/details?id=kr.ac.kookmin.cs.chartcloud.android&hl=ko\">https://play.google.com/store/apps/details?id=kr.ac.kookmin.cs.chartcloud.android&hl=ko</a></p>";
 
