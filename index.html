@@ -117,15 +117,9 @@
                       <div class="spacer"></div>
                      <div class="section-subtitle" data-langID="skill"></div>
                 </header>
-            <div class="row">
-              <div class="col-md-2">
-               <span class="chart" data-percent="80">
-                      <span class="percent"></span>
-                      <h3>C</h3>
-               </span>
-            </div>
+            <div class="row">              
                <div class="col-md-2 ">
-               <span class="chart" data-percent="70">
+               <span class="chart" data-percent="60">
                       <span class="percent"></span>
                       <h3>JAVA</h3>
                </span>
@@ -137,21 +131,21 @@
                </span>
             </div>
                <div class="col-md-2">
-               <span class="chart" data-percent="80">
+               <span class="chart" data-percent="60">
                       <span class="percent"></span>
                       <h3>Embedded system</h3>
                </span>
             </div>
             <div class="col-md-2">
-               <span class="chart" data-percent="60">
+               <span class="chart" data-percent="80">
                       <span class="percent"></span>
                       <h3>JavaScript</h3>
                </span>
             </div>
                <div class="col-md-2">
-               <span class="chart" data-percent="55">
+               <span class="chart" data-percent="70">
                       <span class="percent"></span>
-                       <h3>PHP</h3>
+                       <h3>Ruby on rails</h3>
                </span>
             </div>
           </div>
@@ -181,18 +175,16 @@
                 <header class="section-header">
                     <h2 class="section-title"><span>Experience</span></h2>
                      <div class="spacer"></div><p/>
-<!--                    <p class="section-subtitle">HHSHSHSDH. </p> -->
+
                 </header>
                 <div class="row">
-                 <div class="col-md-6">
+                <div class="col-md-4">
+                  <article class="experience" data-langID="exp-grepp"></article>
+                </div>
+                 <div class="col-md-4">
                   <article class="experience" data-langID="exp-hyp"></article>
                 </div>
-                <!--
-                  <div class="col-md-4">
-                  <article class="experience" data-langID="exp-chart"></article>
-                </div>
-                -->
-                <div class="col-md-6">
+                <div class="col-md-4">
                 <article class="experience" data-langID="exp-hope"></article>
                 </div>
             </div>
@@ -212,14 +204,16 @@
                 <div id="grid-controls-wrapper">
                 <ul class="nav nav-pills center-pills grid-controls">
                   <li class="active filter"><a href="javascript:void(0)" data-filter="*">All</a></li>
-                  <li class="filter" ><a href="javascript:void(0)" data-filter=".embedded">Embedded System</a></li>   
-                  <li class="filter" ><a href="javascript:void(0)" data-filter=".android">Android</a></li>            
                   <li class="filter"><a href="javascript:void(0)"  data-filter=".web">Web/WebApp</a></li>
+                  <li class="filter" ><a href="javascript:void(0)" data-filter=".embedded">Embedded System</a></li>   
+                  <li class="filter" ><a href="javascript:void(0)" data-filter=".android">Android</a></li> 
                 </ul>
               </div>
             
                 <div>
                   <ul id="grid" class="grid-wrapper">
+                      <li class="mix web">
+                      <a href="#pofoCodly" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/img_codly.webp"  alt="">  </a></li>                  
                         <li class="mix embedded" > 
                     <a href="#pofoKhyp" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="img/portfolio/k-hypervisor.png"  alt="">  </a></li>
                       <li class="mix embedded">
@@ -361,6 +355,32 @@
             </div>
         </div>
     </div>
+
+
+    <div class="portfolio-modal modal fade" id="pofoCodly" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <div data-langID = "pofoCodlyTitle"></div>
+                            <hr class="star-primary">
+                            <img src="img/portfolio/codly.PNG" class="img-responsive img-centered" alt="">
+                            <div class="leftalign" data-langID = "pofoCodlyDes"></div>
+                            <button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="portfolio-modal modal fade" id="pofoAds" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -385,160 +405,6 @@
             </div>
         </div>
     </div>
-
-    <div class="portfolio-modal modal fade" id="pofoGraphic" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/large/05.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="pofoHyppaper" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/large/05.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="pofoGdbpaper" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/large/05.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="pofoMonitorpaper" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-                            <img src="img/portfolio/large/05.png" class="img-responsive img-centered" alt="">
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
 
 
 

@@ -47,6 +47,28 @@ var langedumas_ko = "<header> <h3>국민대학교, 임베디드 시스템 연구
                      </header>\
                      <p>1년간 임베디드 전가상화 솔루션을 개발하였고, 가상 디바이스, 스케줄러, 게스트 부트로더, 각종 디바이스 드라이버 개발을 맡았습니다. 이 후 2개월간 안드로이드 게스트가 동작하게끔 작업했으며, 가상화 기반의 모니터링 시스템 및 디버깅 시스템을 개발하였습니다. 석사과정 중 작성한 논문으로 뉴스 추천 시스템, 임베디드 가상화 솔루션, 동적 모니터링 시스템, 이종 운영체제상의 스케줄링 모니터링 시스템에 관해 작성했습니다.</p>";
 
+
+var langexpgrepp_ko =  "<header>\
+                      <h3>Grepp Inc.</h3>\
+                      <p>Software Developer / Grepp Inc. / 2015 - Now</p>\
+                    </header>\
+                      <p>어린이 교육도구인 Codly의 프론트/백 엔드 개발을 맡았습니다.</p>\
+                      <p>Language : Javscript, ruby<br>\
+                      Tool : Github, Sublime<br>\
+                      Framework/Libray : Ruby on rails, Jquery, React, Google clouser<br>\
+                      HomePage : <a href=\"http://www.grepp.co/\">http://www.grepp.co</a></p>";
+
+var langexpgrepp_en =  "<header>\
+                      <h3>Grepp Inc.</h3>\
+                      <p>Software Developer / Grepp Inc. / 2015 - Now</p>\
+                    </header>\
+                      <p>Developed programming Tool for kid - Codly. Taken front/back end.</p>\
+                      <p>Language : Javscript, ruby<br>\
+                      Tool : Github, Sublime<br>\
+                      Framework/Libray : Ruby on rails, Jquery, React, Google clouser<br>\
+                      HomePage : <a href=\"http://www.grepp.co/\">http://www.grepp.co</a></p>";
+
+
 var langexphyp_en =  "<header>\
                       <h3>Embedded System Laboratory at Kookmin University</h3>\
                       <p>Software Developer / Embedded System Laboratory at Kookmin University / 2013 - 2015</p>\
@@ -263,6 +285,23 @@ var pofo_ads_des_ko = "<p>Web/Sever developer / wenfactory(http://www.wenfactory
                        SW - Collecting wifi signal : Airodump-ng[Aircrack-ng]<br>\
                        Web url : <a href=\"http://1.255.56.239/ads/index.html\">http://1.255.56.239/ads/index.html</a><br>";
 
+var pofo_codly_title_ko= "<h2>Codly 어린이 프로그래밍 교육 컨텐츠</h2> <h3>블록 코딩 서비스</h3>";
+var pofo_codly_des_ko = "<p>Web/Sever developer / Grepp(http://grepp.co/) / 2015. 8 ~ Now (on going)</p>\
+                       <p>블록 코딩 방식을 이용한 쉬운 코딩 체험 교육 서비스. Computational Thinking을 쉽게 이해할 수 있는 교육 커리큘럼을 제공합니다.</p>\
+                       <p>Language : Javascript, Ruby<br>\
+                       Platform : web<br>\
+                       Framework : Ruby on rails<br>\
+                       DB : postgresql<br>\
+                       Web url : <a href=\"https://Codly.co.kr\">https://Codly.co.kr</a><br>";
+
+var pofo_codly_title_en= "<h2>Codly, Programming education tool for kids</h2> <h3>Block coding education service.</h3>";
+var pofo_codly_des_en = "<p>Web/Sever developer / Grepp(http://grepp.co/) / 2015. 8 ~ Now (on going)</p>\
+                       <p>블록 코딩 방식을 이용한 쉬운 코딩 체험 교육 서비스. Computational Thinking을 쉽게 이해할 수 있는 교육 커리큘럼을 제공합니다.</p>\
+                       <p>Language : Javascript, Ruby<br>\
+                       Platform : web<br>\
+                       Framework : Ruby on rails<br>\
+                       DB : postgresql<br>\
+                       Web url : <a href=\"https://Codly.co.kr\">https://Codly.co.kr</a><br>";
 
 $.lang = {};
 
@@ -285,6 +324,9 @@ $.lang['ko'] = {
     'pofoHopeDes' : pofo_hope_des_ko,
     'pofoAdsTitle' : pofo_ads_title_ko,
     'pofoAdsDes' : pofo_ads_des_ko,
+    'exp-grepp' : langexpgrepp_ko,
+    'pofoCodlyTitle' : pofo_codly_title_ko,
+    'pofoCodlyDes' : pofo_codly_des_ko,
 	1: '안녕하세요',
 };
 
@@ -307,6 +349,9 @@ $.lang['en'] = {
     'pofoHopeDes' : pofo_hope_des_en,
     'pofoAdsTitle' : pofo_ads_title_en,
     'pofoAdsDes' : pofo_ads_des_en,
+    'exp-grepp' : langexpgrepp_en,
+    'pofoCodlyTitle' : pofo_codly_title_en,
+    'pofoCodlyDes' : pofo_codly_des_en,    
     1: 'Hello.',
 };
 

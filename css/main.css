@@ -172,6 +172,9 @@ background-color: transparent;
 #page-contact{
     padding: 75px 0;
 }
+.contact-info {
+    text-align: center;
+}
 
 #page-contact .contact-info p{
     font-size:1.2em;
