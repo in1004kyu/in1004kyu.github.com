@@ -571,6 +571,9 @@ label.valid{
     color:#D3492C;
 }
 
+.btn-github:hover{
+    color:black;
+}
 
 /* ==========================================================================
    Helper classes

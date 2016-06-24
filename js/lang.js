@@ -4,8 +4,8 @@ $(document).ready(function(){
 var langprofile_en = "<p>A software developer with 2 years experience with embedded system and 1 year experience with android and web from back-end to front-end.</p>\
                     <ul>\
                     <li>Experience with various fields : Virtualization Embedded system, Android App, WebApp, Web development.</li>\
-                    <li>My current interests : Embedded System with IOT, Android development including Android Wear, Python.</li>\
-                    <li>Specialties : C, JAVA, Device driver, Javascript, HTML, Android app, Github.</li>\
+                    <li>My current interests : Web, Ruby on Rails, Embedded System with IOT, Android development including Android Wear.</li>\
+                    <li>Specialties : C, JAVA, Device driver, Javascript, Ruby on rails, Android app, Github.</li>\
                     </ul>\
                     <p>My competitive advantage is I have substantial working experiences in Android app programming and device driver programming.\
                     I developed Android App about SNS application interwork between facebook and twitter for Graduation portfolio project. Through \
@@ -16,14 +16,14 @@ var langprofile_en = "<p>A software developer with 2 years experience with embed
 var langprofile_ko = "<p>2년의 임베디드 시스템 프로그래밍 개발 경험과 1년의 안드로이드/웹 관련 프론트/백 엔드 개발 경력을 가지고 있습니다.</p>\
                     <ul>\
                     <li>다양한 분야 경험 : 임베디드 가상화 솔루션 개발, 안드로이드 앱, 웹앱 및 웹 개발.</li>\
-                    <li>관심분야 : 임베디드 시스템을 이용한 IOT, 안드로이드 웨어 디바이스, 파이썬</li>\
-                    <li>전문분야 : C, JAVA, 디바이스 드라이버, 자바스크립트, HTML, 안드로이드 앱, 깃허브</li>\
+                    <li>관심분야 : 웹, 루비 온 레일즈, 임베디드 시스템을 이용한 IOT, 안드로이드 웨어 디바이스</li>\
+                    <li>전문분야 : 루비온 레일즈, C, JAVA, 디바이스 드라이버, 자바스크립트, HTML, 안드로이드 앱, 깃허브</li>\
                     </ul>\
                     <p>안드로이드 앱 개발과 임베디드 시스템 관련 디바이스 드라이버 개발에 강점이 있습니다.\
                     졸업 프로젝트로 페이스북과 연동되는 SNS 안드로이드 앱을 개발하였고, 굿네이버스에서 홍보용 웹앱을 개발하였습니다. \
                     클라이언트와 서버 개발을 동시에 했기 때문에 프론트/백 엔드 분야의 개발 경험이 있습니다. \
                     현재는 ARMv7 CortexA-15 칩 기반인 Exynos-5250 Arndale 보드위에 가상화 솔루션을 개발하고 있습니다.\
-                    본 프로젝트로 리눅스 시스템과 ARM 어셈블러, 시스템 프로그래밍에 대한 개발 경험을 가지고 있습니다.<p>";
+                    본 프로젝트로 리눅스 시스템과 ARM 어셈블러, 시스템 프로그래밍에 대한 개발 경험을 가지고 있습니다. 현재는 웹 프론트 앤드, 서버 백 앤드를 맡아 개발하고 있습니다.<p>";
 
 var langskill_en = "<p>Available skills</p>";
 var langskill_ko = "<p>활용 가능한 보유기술입니다.</p>";
