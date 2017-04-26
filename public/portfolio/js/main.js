@@ -99,7 +99,7 @@ $('.chart').waypoint(function() {
 				
 				{ src:'/public/portfolio/img/slider/android.jpg', fade:1000 },
 				{ src:'/public/portfolio/img/slider/kookmin.jpg', fade:1000 },
-                                                   { src:'img/slider/linux.jpg', fade:1000 },
+                                                   { src:'/public/portfolio/img/slider/linux.jpg', fade:1000 },
 			  ]
 			})('overlay', {
 			  src:'/public/portfolio/img/overlays/16.png'
