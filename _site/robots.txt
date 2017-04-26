@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://in1004kyu.github.io/sitemap.xml
