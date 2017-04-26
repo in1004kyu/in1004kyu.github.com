@@ -97,12 +97,12 @@ $('.chart').waypoint(function() {
 		$.vegas('slideshow', {
 			  backgrounds:[
 				
-				{ src:'img/slider/android.jpg', fade:1000 },
-				{ src:'img/slider/kookmin.jpg', fade:1000 },
+				{ src:'/public/portfolio/img/slider/android.jpg', fade:1000 },
+				{ src:'/public/portfolio/img/slider/kookmin.jpg', fade:1000 },
                                                    { src:'img/slider/linux.jpg', fade:1000 },
 			  ]
 			})('overlay', {
-			  src:'img/overlays/16.png'
+			  src:'/public/portfolio/img/overlays/16.png'
 			});
 			$( "#vegas-next" ).click(function() {
 			  $.vegas('next');
