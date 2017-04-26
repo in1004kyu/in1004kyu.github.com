@@ -16,7 +16,7 @@
 title: 인규의 개발 블로그
 email: in1004kyu@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  레일즈 기반의 웹 서비스를 개발 중입니다. 현재는 서버와 게임 공부를 하고 있어요. 포폴 페이지 : https://in1004kyu.github.io/
+  레일즈 기반의 웹 서비스를 개발 중입니다. 현재는 서버와 게임 공부를 하고 있어요.
 version: 1  
 
 baseurl: "" # the subpath of your site, e.g. /blog
