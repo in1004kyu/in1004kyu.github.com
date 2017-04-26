@@ -2,8 +2,6 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2015-04-26 13:51:12 +0900
-categories: jekyll update
-brief: "테스트를 했습니다"
 tags:
 - Jekyll
 ---

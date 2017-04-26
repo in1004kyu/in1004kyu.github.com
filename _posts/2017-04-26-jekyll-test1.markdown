@@ -2,8 +2,6 @@
 layout: post
 title:  "테스트!"
 date:   2017-04-26 13:51:12 +0900
-categories: jekyll update
-brief: "테스트를 했습니다"
 tags:
 - Jekyll
 ---
