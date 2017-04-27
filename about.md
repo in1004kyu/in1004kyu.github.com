@@ -3,13 +3,4 @@ layout: page
 title: About
 permalink: /about/
 ---
-인규다
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+국민대 임베디드 시스템 대학원에서 가상화 운영체제에 대해 공부하고 개발하다 현재 스타트업인 grepp에서 루비온레일즈 기반의 웹서비스를 개발하고 있다. 처음엔 프론트를 하다가 이젠 백엔드를 공부하면서 둘다 전담하고 있다.
