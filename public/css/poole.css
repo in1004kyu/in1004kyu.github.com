@@ -364,7 +364,7 @@ tbody tr:nth-child(odd) th {
   padding-left: 0;
   list-style: none;
 }
-.related-posts h3 {
+.related-posts h3, .related-posts .related_posts_text{
   margin-top: 0;
 }
 .related-posts li small {

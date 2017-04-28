@@ -1,33 +1,36 @@
 ---
 layout: post
-title:  "RSpec 정리."
+title:  "RSpec 정리"
 date:   2017-04-26 13:51:12 +0900
+description: "Rails의 Behaviour-driven Development (BDD)인 Rspec의 설정과 사용법에 대한 듀토리얼입니다."
 tags:
 - ruby-on-rails
 - RSpec
+- BDD
 ---
 
-<!-- <div id="toc"><p class="toc_title">목차</p></div> -->
+<div id="toc"><p class="toc_title">목차</p></div>
 
-# 준비하기
+Rails의 Behaviour-driven Development (BDD)인 Rspec의 설정과 사용법에 대한 듀토리얼입니다. 회사에서는 Teamcity와 연동하여 git에 commit 할 때마다 Rspec 테스트를 자동으로 하게 해놨다. 테스트 프레임워크는 리팩토링할 때 다른 곳에서 나타나는 버그를 잡아주는 역할을 해준다. 
 
+**준비하기**
+-------------
 
-* 설치할것 - RSpec, Capybara, Shoulda-Matchers, Database Cleaner
+설치할것 - RSpec, Capybara, Shoulda-Matchers, Database Cleaner
 
-## Shoulda-Matchers and Database Cleaner
-**Shoulda-Matchers** : matcher를 하나의 라인으로 간략하게 사용할 수 있게해준다. <br>
-**Database Cleaner** : 테스트시 디비의 상태를 깨끗하게 해준다.
-### 설치
+### **Shoulda-Matchers**
+matcher를 하나의 라인으로 간략하게 사용할 수 있게해준다.
+
 Gemfile
+
 {% highlight ruby %}
 group :test do
   gem 'shoulda-matchers', '~> 3.0', require: false
-  gem 'database_cleaner', '~> 1.5'
 end
 {% endhighlight %}
 
-### shoulda-matchers 설정
 spec/rails_helper.rb
+
 {% highlight ruby %}
 require 'shoulda/matchers'
 
@@ -39,13 +42,26 @@ Shoulda::Matchers.configure do |config|
 end
 {% endhighlight %}
 
-### database cleaner 설정
+
+### **Database Cleaner**
+테스트시 디비의 상태를 깨끗하게 해준다.
+
+Gemfile
+
+{% highlight ruby %}
+group :test do
+  gem 'database_cleaner', '~> 1.5'
+end
+{% endhighlight %}
+
 spec/rails_helper.rb
+
 {% highlight ruby %}
 config.use_transactional_fixtures = false
 {% endhighlight %}
 
 spec/support/database_cleaner.rb 생성
+
 {% highlight ruby %}
 RSpec.configure do |config|
 
@@ -71,14 +87,14 @@ RSpec.configure do |config|
 end
 {% endhighlight %}
 
-## Capybara
+### **Capybara**
 사용자의 행동을 시뮬레이션하는 테스트를 생성해주는 프레임워크. 
-gem에서 `:development, :test` 그룹에 넣어주자. 저는 test 그룹에만 넣었습니다.
+gem에서 `:test` 그룹에 넣어주자.
 
 Gemfile
 
 {% highlight ruby %}
-group :development, :test do  
+group :test do  
   gem 'capybara', '~> 2.5'
 end
 {% endhighlight %}
@@ -88,7 +104,7 @@ spec_helper.rb
 require 'capybara/rspec'
 {% endhighlight %}
 
-## Faker, Factory Gril
+### **Faker, Factory Gril**
 **Faker** : 랜덤한 데이터를 생성 <br>
 **Factory girl** : 가짜 객체를 생성. Faker로 랜덤한 데이터를 입력한 객체를 생성할 때 같이 사용한다
 
@@ -98,11 +114,12 @@ gem 'faker', '~> 1.6.1'
 gem 'factory_girl_rails', '~> 4.5.0'
 {% endhighlight %}
 
-
-# 테스트하기
+<hr>
+**테스트하기**
+-------------
 * Model Specs, Controller Spec, Feature Spec 3가지를 테스트함.
 
-## Model Specs
+### **Model Specs**
 Model를 테스트함. valide를 테스트할 수 있다. User 모델을 예로 들어보자. 먼저 User 템플릿을 factory를 사용해서 만든다.
 
 spec/factories.rb 생성
@@ -148,6 +165,6 @@ end
 {% endhighlight %}
 
 
-## Controller Specs
+### **Controller Specs**
 
-## Feature Specs
+### **Feature Specs**
