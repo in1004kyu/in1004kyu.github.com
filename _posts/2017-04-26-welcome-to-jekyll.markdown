@@ -2,7 +2,7 @@
 layout: post
 title:  "마크다운 예제"
 date:   2015-04-26 13:51:12 +0900
-description: "You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated."
+description: "지킬 마크다운 테스트 포스트입니다."
 tags:
 - Jekyll
 ---
