@@ -95,7 +95,7 @@ end
 {% endhighlight %}
 
 ### **Capybara**
-사용자의 행동을 시뮬레이션하는 테스트를 생성해주는 프레임워크. 
+사용자의 행동을 시뮬레이션하는 테스트기능을 제공한다. 
 gem에서 `:test` 그룹에 넣어주자.
 
 {% highlight ruby %}
@@ -125,6 +125,8 @@ gem 'factory_girl_rails', '~> 4.5.0'
 {% endhighlight %}
 
 <hr>
+
+
 **테스트하기**
 -------------
 * Model Specs, Controller Spec, Feature Spec 3가지를 테스트함.
@@ -269,9 +271,66 @@ rspec spec/controllers/post_controller_spec.rb
 </pre>
 
 ### **Feature Specs**
+사용자의 행동에 따른 결과를 테스트 할 수 있다. 예를들어 입력 form에 값을 입력하고 submit 버튼을 누르면 어떤 페이지가 렌더링 되며, 그 페이지에는 어떠한 값이 있어야하는지를 테스트 할 수 있다. 하이레벨의 테스트를 한다고 생각하면 될 것 같다.
 
-작성중..
+각자의 입력폼을 가진 view와 그에 따른 controller가 있으면 그걸 가지고 테스트하면 된다. 
+여기서는 회원가입 페이지에서 가입 정보를 입력하고 가입 버튼을 눌렀을 때 원하는 페이지 그리고, 가입이 잘 됐는지를 테스트 해본다. 
 
+sign_up이라는 회원가입 페이지에서 이메일과 닉네임과 비밀번호, 비밀번호 확인, 그리고 약관동의와 개인정보 수집 이용 동의를 클릭하고 가입하기 버튼을 클릭 한 경우일 때
+1. 홈으로 잘 가는지.
+2. 가입된 회원이 있는지
 
+이 두가지를 테스트 한다.
+
+{% highlight ruby %}
+### spec/features/register_user_spec.rb
+require 'rails_helper'
+
+RSpec.feature "계정 생성 테스트", type: :feature do
+  scenario "Create a new user" do
+     visit "/sign_up"     # 회원 가입 페이지
+     email = "in1004kyu@gmail.com"
+     # 가입 폼에 데이터를 입력하는 시뮬레이션 
+     # input 의 value name에 (name: 'user[email]'), 값을 입력한다 (with: email)
+     fill_in name: 'user[email]', with: email
+     fill_in name: 'user[nickname]', with: "codly"
+     fill_in name: 'user[password]', with: "1234567a"
+     fill_in name: 'user[password_confirmation]', with: "1234567a"     
+     # 체크박스가 있다면 체크를 한다. (이용약관 개인정보 동의. #~~ 는 input id 이다.)
+     find(:css, "#user_terms").set(true)
+     find(:css, "#user_privacy").set(true)
+     # 버튼을 클릭한다. 버튼의 text를 인자로 넘겨준다
+     click_button '가입하기'
+     # 테스트 : 가입이 잘되면 홈으로 가야한다.
+     expect(current_path).to eq(root_path)
+     user = User.find_by_email(email)
+     # 테스트 : 가입이 잘되면 해당 회원이 있어야한다.
+     expect(user).not_to be_nil
+  end
+end
+{% endhighlight %}
+
+**커버리지 체크**
+-------------
+SimpleCov gem은 어플리케이션 중에서 얼마나 테스트가 됐는지 체크해주는 커버리지 툴이다. Gemfiel의 test 그룹에 추가해주자.
+{% highlight ruby %}
+### Gemfile
+gem 'simplecov', :require => false
+{% endhighlight %}
+
+설정을 추가해주자. 여기선 테스트를 스킵할 것을 필터를 사용할 수 있다.
+{% highlight ruby %}
+### spec/rails_helper.rb
+require 'simplecov'
+SimpleCov.start 'rails' do
+  # admin 폴더는 커버리지 대상에서 제외함.
+  add_filter '/app/admin/'
+end
+{% endhighlight %}
+
+터미널에서 테스트를 해보면 coverage 디렉토리에 index.html에서 커버리지 분석 결과를 볼 수 있다.
+<pre>
+rspec spec
+</pre>
 
 [matcher]: https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers
