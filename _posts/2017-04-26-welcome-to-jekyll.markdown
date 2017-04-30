@@ -22,7 +22,9 @@ print_hi('Tom')
 
 Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
 
-<a rel="nofollow" data-method="post" href="https://codly.co.kr/login_from_netffice?email=in1004kyu%40naver.com&sid=9415b3f0-0410-40c2-856c-2fb377194aa6">자동로그인 테스트</a>
+<div id = "test_btn">
+	테스트
+</div>
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll

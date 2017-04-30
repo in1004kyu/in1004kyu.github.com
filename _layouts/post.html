@@ -34,4 +34,17 @@ comments: true
 <!-- TOC Generator -->
 <script>
    $('#toc').toc({exclude: 'h1, h6', autoId: true});
+
+   $( document ).ready(function(){
+      $("#test_btn").click(function(){
+        console.log("??")
+          $.post( "https://codly.co.kr/login_from_netffice", { email: "in1004kyu@naver.com", sid: "9415b3f0-0410-40c2-856c-2fb377194aa6" } );
+            //<a rel="nofollow" data-method="post" href="https://codly.co.kr/login_from_netffice?email=in1004kyu%40naver.com&sid=9415b3f0-0410-40c2-856c-2fb377194aa6">자동로그인 테스트</a>          
+        });
+   });
+  
+  
+  
+
+
 </script>
