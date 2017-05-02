@@ -31,7 +31,6 @@ test
 <a rel="nofollow" data-method="post" href="https://codly.co.kr/login_from_netffice?email=in1004kyu%40naver.com&sid=9415b3f0-0410-40c2-856c-2fb377194aa6">자동로그인 테스트</a>
 -->
 
->>>>>>> 35908c34ae53834060d551ea52f6d90ddca0918c
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
