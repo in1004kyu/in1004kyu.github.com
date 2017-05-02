@@ -39,14 +39,21 @@ comments: true
 
     $("#post_test").click(function(){
       console.log("ss");   
+      
+
+      /*
       $.post("https://alpha.codly.co.kr/login_from_netffice", 
           {email: "in1004kyu@naver.com", sid : "9415b3f0-0410-40c2-856c-2fb377194aa6"}
-        );      
-      /*   
+        );
+        */      
+      
       $.post("http://kids-webapp.dev/login_from_netffice", 
           {email: "in1004kyu@naver.com", sid : "9415b3f0-0410-40c2-856c-2fb377194aa6"}
-        );
-        */
+        ).done(function(d) {
+          console.log(d)
+        });
+        
+        
     })
 
    });

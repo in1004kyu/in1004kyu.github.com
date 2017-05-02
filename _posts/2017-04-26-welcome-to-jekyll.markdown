@@ -24,12 +24,19 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 
 <div id="post_test">
-test
+post test
 </div>
 
-<!--
-<a rel="nofollow" data-method="post" href="https://codly.co.kr/login_from_netffice?email=in1004kyu%40naver.com&sid=9415b3f0-0410-40c2-856c-2fb377194aa6">자동로그인 테스트</a>
--->
+<form action="https://codly.co.kr/login_from_netffice" method="POST">
+<!--<input type="hidden" name="email" value="in1004kyu@naver.com" />-->
+<input type="hidden" name="sid" value="9415b3f0-0410-40c2-856c-2fb377194aa6" />
+<a href="#" onclick="this.parentNode.submit()">Form 이용!</a>
+</form>
+
+
+<a rel="nofollow" data-method="post" href="http://kids-webapp.dev/login_from_netffice?email=in1004kyu@naver.com&sid=9415b3f0-0410-40c2-856c-2fb377194aa6">로컬 자동로그인 테스트</a>
+
+<a rel="nofollow" data-method="get" href="http://alpha.codly.co.kr/login_from_netffice?email=in1004kyu@naver.com&sid=9415b3f0-0410-40c2-856c-2fb377194aa6">알팜 테스트</a>
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
