@@ -155,7 +155,7 @@ RSpec.describe User, type: :model do
     let(:user) { FactoryGirl.build(:user) }
     # factories.rb를 참조해 user를 만들어준다
 
-    # email과 userid가 존재하는지에 대한 valide 를 체크.
+    # email과 name가 존재하는지에 대한 valide 를 체크.
     it { is_expected.to validate_presence_of(:email) }
     it { is_expected.to validate_presence_of(:name) }
     
@@ -177,7 +177,7 @@ end
 
 {% endhighlight %}
 
-user의 email과 userid의 존재해야하는 validate_presence_of를 만족하는것에 대한 테스트, email과 password의 입력형식에 대한 테스트이다. user 모델에 email,userid의 validate 설정이 되어 있어야하고, email, password의 validate와 에러 메시지가 설정되어있어한다. 서비스에 구현한 모델을 테스트해보자.
+user의 email과 name의 존재해야하는 validate_presence_of를 만족하는것에 대한 테스트, email과 password의 입력형식에 대한 테스트이다. user 모델에 email,name의 validate 설정이 되어 있어야하고, email, password의 validate와 에러 메시지가 설정되어있어한다. 서비스에 구현한 모델을 테스트해보자.
 
 터미널에서 테스트한다
 <pre>
