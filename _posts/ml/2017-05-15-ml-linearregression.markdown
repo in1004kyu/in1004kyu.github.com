@@ -2,7 +2,7 @@
 layout: post
 title:  "Linear regression, hypothesis, cost"
 date:   2017-05-15 13:51:12 +0900
-description: "n+1 문제를 해결할때 중첩된 includes 사용하는 법."
+description: "tensorflow 스터디 1주차. 기본 용어 설명"
 tags:
 - Machin learning
 - Tensorflow
