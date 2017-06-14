@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "rails + actioncable + nginx + puma + aws elb 정리"
-date:   2017-05-29 10:51:12 +0900
+date:   2017-06-14 10:51:12 +0900
 description: "rails의 actioncable을 사용할 때 본 서버와 다른 port를 사용하고 싶을 때가 있다. 여기서 aws의 elb를 사용할 경우 port 번호를 넘겨 받기 위해선 nginx에서 proxy_protocol를 사용해야하는데 처음에 이걸 몰라 많이 해맸다. 이에대한 전반적인 설정에 대한 내용을 정리한다."
 tags:
 - ruby-on-rails
