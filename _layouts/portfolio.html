@@ -178,6 +178,9 @@
                 <div class="col-md-4">
                   <article class="experience" data-langID="exp-grepp"></article>
                 </div>
+                <div class="col-md-4">
+                  <article class="experience" data-langID="exp-major"></article>
+                </div>
                  <div class="col-md-4">
                   <article class="experience" data-langID="exp-hyp"></article>
                 </div>
@@ -210,9 +213,12 @@
                 <div>
                   <ul id="grid" class="grid-wrapper">
                       <li class="mix web">
+                        <a href="#pofoProgrammers" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="{{ site.baseurl }}/public/portfolio/img/portfolio/programmers.png"  alt="">  </a></li>
+                      </li>
+                      <li class="mix web">
                       <a href="#pofoCodly" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="{{ site.baseurl }}/public/portfolio/img/portfolio/img_codly.webp"  alt="">  </a></li>                  
                         <li class="mix embedded" > 
-                    <a href="#pofoKhyp" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="{{ site.baseurl }}/public/portfolio/img/portfolio/k-hypervisor.png"  alt="">  </a></li>
+                      <a href="#pofoKhyp" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="{{ site.baseurl }}/public/portfolio/img/portfolio/k-hypervisor.png"  alt="">  </a></li>
                       <li class="mix embedded">
                       <a href="#pofoGdb" class="portfolio-link" data-toggle="modal"><div class="overlay"><i class="fa fa-search"></i></div><img src="{{ site.baseurl }}/public/portfolio/img/portfolio/gdb.png"  alt="">  </a></li>
                       <li class="mix android">
@@ -352,6 +358,29 @@
         </div>
     </div>
 
+  <div class="portfolio-modal modal fade" id="pofoProgrammers" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <div data-langID = "pofoProgrammersTitle"></div>
+              <hr class="star-primary">
+              <img src="{{ site.baseurl }}/public/portfolio/img/portfolio/programmers.png" class="img-responsive img-centered" alt="">
+              <div class="leftalign" data-langID = "pofoProgrammersDes"></div>
+              <button type="button" class="btn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <div class="portfolio-modal modal fade" id="pofoCodly" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
